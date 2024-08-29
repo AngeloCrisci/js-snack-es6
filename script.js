@@ -33,9 +33,6 @@ guestes.forEach(logGuestes);
 //*SNACK 2*
 // Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
 
-//* 1. Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo
-// ES (Marco della Rovere => MARCO DELLA ROVERE);
-
 const students = [
     {
       id: 213,
@@ -73,3 +70,13 @@ const students = [
       vote: 84,
     },
   ];
+  
+//* 1. Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo
+// ES (Marco della Rovere => MARCO DELLA ROVERE);
+
+const studentNames = students.map((student) => {
+    return `${student.name.toUpperCase()}`
+    
+}
+)
+console.log(studentNames)
