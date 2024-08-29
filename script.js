@@ -43,23 +43,33 @@ const students = [
       grades: 78,
     },
     {
-      id: 2,
-      name: 'Michele Papagni',
-      vote: 7
+      id: 110,
+      name: 'Paola Cortellessa',
+      vote: 96,
     },
     {
-      id: 3,
-      name: 'Fabio Forghieri',
-      vote: 7
+      id: 250,
+      name: 'Andrea Mantegna',
+      vote: 48,
     },
     {
-      id: 4,
-      name: 'Filippo Mangione',
-      vote: 7
+      id: 145,
+      name: 'Gaia Borromini',
+      vote: 74,
     },
     {
-      id: 5,
-      name: 'Marco Lanci',
-      vote: 10
+      id: 196,
+      name: 'Luigi Grimaldello',
+      vote: 68,
+    },
+    {
+      id: 102,
+      name: 'Piero della Francesca',
+      vote: 50,
+    },
+    {
+      id: 120,
+      name: 'Francesca da Polenta',
+      vote: 84,
     },
   ];
