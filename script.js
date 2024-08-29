@@ -19,3 +19,9 @@ const guestes = [
     { tableName: tableName, guestName: 'Amadeus'},
     { tableName: tableName, guestName: 'Fiorello'},
 ]
+
+const logGuestes = ( guest , place ) => {
+ console.log(guest)
+};
+
+guestes.forEach(logGuestes);
