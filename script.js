@@ -20,8 +20,46 @@ const guestes = [
     { tableName: tableName, guestName: 'Fiorello'},
 ]
 
-const logGuestes = ( guest , place ) => {
- console.log(guest)
+
+
+const logGuestes = ( guest, index ) => {
+    let place = index + 1;
+ console.log("tavolo:"+guest.tableName + " ospite:"+guest.guestName + " posizione:" + place)
 };
 
 guestes.forEach(logGuestes);
+
+
+//*SNACK 2*
+// Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
+
+//* 1. Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo
+// ES (Marco della Rovere => MARCO DELLA ROVERE);
+
+const students = [
+    {
+      id: 213,
+      name: 'Marco della Rovere',
+      grades: 78,
+    },
+    {
+      id: 2,
+      name: 'Michele Papagni',
+      vote: 7
+    },
+    {
+      id: 3,
+      name: 'Fabio Forghieri',
+      vote: 7
+    },
+    {
+      id: 4,
+      name: 'Filippo Mangione',
+      vote: 7
+    },
+    {
+      id: 5,
+      name: 'Marco Lanci',
+      vote: 10
+    },
+  ];
