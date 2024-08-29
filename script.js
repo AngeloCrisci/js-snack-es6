@@ -76,7 +76,17 @@ const students = [
 
 const studentNames = students.map((student) => {
     return `${student.name.toUpperCase()}`
-    
 }
 )
 console.log(studentNames)
+
+//* 2. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
+
+const studentVoteOver70 = students.filter ((student => student.vote > 70 ));
+console.log(studentVoteOver70);
+
+//* 3. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
+
+const studentOver70and120 = students.filter((student => student.vote > 70 & student.id > 120));
+
+console.log(studentOver70and120);
