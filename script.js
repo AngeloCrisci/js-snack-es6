@@ -134,3 +134,19 @@ const teams = [
   {teamName: 'Napoli' , points: 0, faulTaken: 0},
 ]
 
+const GetRandomNumbers = (min , max) => {
+  return Math.floor(Math.random()  * (max - min  + 1) + min)
+};
+
+for (let team of teams){
+  team.points = GetRandomNumbers (1 , 20);
+  team.faulTaken = GetRandomNumbers (1 , 20);
+}
+
+// const teamFauls = teams.map(({teamName , faulTaken}) => ({teamName , faulTaken}));
+
+
+const teamFauls = teams.map((team) => `${team.teamName} ${team.faulTaken}`);
+
+console.log(teamFauls);
+
