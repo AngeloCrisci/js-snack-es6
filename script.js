@@ -118,3 +118,5 @@ const  {bikeName , weight} = lessWeightBike;
 console.log(`La bici più leggere è la ${bikeName} con il peso ${weight}`)
 
 
+
+
