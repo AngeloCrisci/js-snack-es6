@@ -90,3 +90,31 @@ console.log(studentVoteOver70);
 const studentOver70and120 = students.filter((student => student.vote > 70 & student.id > 120));
 
 console.log(studentOver70and120);
+
+//* SNACK 3*
+// Creare un array di oggetti:
+// Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+// Stampare in console la bici con peso minore utilizzando destructuring e template literal
+
+const bikes = [
+  { bikeName: 'Graziella' , weight: 9 },
+  { bikeName: 'Triban' , weight: 6.8},
+  { bikeName: 'Scott' , weight: 8},
+  { bikeName: 'Fiido' , weight: 9},
+];
+
+let lessWeightBike = bikes[0];
+
+for(const bike of bikes ){
+  if (bike.weight < lessWeightBike.weight){
+  
+  lessWeightBike = bike;
+  }
+}
+
+const  {bikeName , weight} = lessWeightBike;
+
+
+console.log(`La bici più leggere è la ${bikeName} con il peso ${weight}`)
+
+
