@@ -12,6 +12,8 @@ const animals = [
     { nome: 'falco', famiglia: 'falconidea', classe: 'uccelli' },
 ]
 
+// Crea un nuovo array con la lista dei mammiferi.
+
 const filteredAnimals = animals.filter((animal) => {
     return animal.classe === 'mammiferi';
 })
